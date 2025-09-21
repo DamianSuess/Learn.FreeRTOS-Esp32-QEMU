@@ -7,3 +7,8 @@ The "FreeRTOS with ESP32 QEMU" learn module provides samples basic FreeRTOS oper
 * VS Code
   * ESP-IDF Extension
 * Docker
+
+## TO DO LIST
+
+* Write steps for configuring Docker (2025)
+* Fix Docker from creating new instances EVERY TIME!
