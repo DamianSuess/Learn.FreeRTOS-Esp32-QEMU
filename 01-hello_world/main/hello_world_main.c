@@ -1,9 +1,3 @@
-/*
- * SPDX-FileCopyrightText: 2010-2022 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: CC0-1.0
- */
-
 #include <stdio.h>
 #include <inttypes.h>
 #include "sdkconfig.h"
@@ -14,14 +8,6 @@
 #include "esp_log.h"
 #include "esp_system.h"
 
-// https://www.youtube.com/watch?v=lZp9L7Ij4Yo
-// 0. Clean: idf.py fullclean
-// 1. Build: idf.py build
-// 2. Combine binaries
-//    esptool.py --chip esp32 merge_bin --output result.bin --fill-flash-size 4MB 0x1000 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0x10000 build/hello_world.bin --flash_mode dio --flash_freq 40m --flash_size 4MB
-// 3. Running app in qemu
-//    1. Select, Terminal, tab (should be in linux prompt)
-//    3. qemu-system-xtensa -nographic -machine esp32 -drive file=result.bin,if=mtd,format=raw
 void app_main(void)
 {
   int count = 0;
